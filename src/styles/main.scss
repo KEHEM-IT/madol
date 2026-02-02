@@ -4,20 +4,20 @@
 // Import all component files
 
 // 1. Base variables and theme
-@import 'colors';
-@import 'theme';
+@use 'colors' as *;
+@use 'theme' as *;
 
 // 2. Utilities and helpers
-@import 'utilities';
+@use 'utilities';
 
 // 3. UI Components
-@import 'ui';
+@use 'ui';
 
 // 4. Form elements
-@import 'forms';
+@use 'forms';
 
 // 5. Buttons
-@import 'buttons';
+@use 'buttons';
 
 // ============================================
 // ADDITIONAL ERP-SPECIFIC COMPONENTS

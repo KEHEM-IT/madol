@@ -1,7 +1,7 @@
 // ============================================
 // THEME VARIABLES
 // ============================================
-@import 'colors';
+@use 'colors' as *;
 
 // Spacing scale
 $spacing-xs: 0.25rem;    // 4px

@@ -1,7 +1,8 @@
 // ============================================
 // UTILITY & HELPER STYLES
 // ============================================
-@import 'theme';
+@use 'sass:math';
+@use 'theme' as *;
 
 // ============================================
 // GLOBAL RESET & BASE
@@ -1000,7 +1001,7 @@ body {
 @for $i from 1 through $grid-columns {
     .col-#{$i} {
         flex: 0 0 auto;
-        width: percentage($i / $grid-columns);
+        width: math.percentage(math.div($i, $grid-columns));
         padding-left: calc(#{$grid-gutter} / 2);
         padding-right: calc(#{$grid-gutter} / 2);
     }
